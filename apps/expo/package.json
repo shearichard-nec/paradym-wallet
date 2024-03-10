@@ -4,8 +4,10 @@
   "main": "index.js",
   "private": true,
   "scripts": {
+    "startshea": "RCT_METRO_PORT=19000 TAMAGUI_TARGET=native APP_VARIANT=development expo start -c --dev-client",
     "start": "TAMAGUI_TARGET=native APP_VARIANT=development expo start -c --dev-client",
     "android": "TAMAGUI_TARGET=native APP_VARIANT=development yarn expo run:android",
+    "androidshea": "TAMAGUI_TARGET=native APP_VARIANT=development yarn expo run:android --device",
     "ios": "TAMAGUI_TARGET=native APP_VARIANT=development yarn expo run:ios",
     "prebuild": "TAMAGUI_TARGET=native APP_VARIANT=development expo prebuild --no-install"
   },
